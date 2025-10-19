@@ -21,7 +21,7 @@ exports.handler = async (event) => {
       return { statusCode: 405, headers: { 'Access-Control-Allow-Origin': '*' }, body: 'Method Not Allowed' };
     }
 
-    const APPS_SCRIPT_ENDPOINT_CONTENEDORES = process.env.APPS_SCRIPT_ENDPOINT_CONTENEDORES; // URL /exec
+    const APPS_SCRIPT_ENDPOINT_EFICIENCIA = process.env.APPS_SCRIPT_ENDPOINT_EFICIENCIA; // URL /exec
     const RECAPTCHA_SECRET                  = process.env.RECAPTCHA_SECRET;                  // v3 secret
 
     // Parse body
@@ -101,9 +101,9 @@ exports.handler = async (event) => {
     // Forward a Apps Script
     let forwarded = 'skipped';
     let gasStatus = 0;
-    if (APPS_SCRIPT_ENDPOINT_CONTENEDORES) {
+    if (APPS_SCRIPT_ENDPOINT_EFICIENCIA) {
       try {
-        const res = await fetch(APPS_SCRIPT_ENDPOINT_CONTENEDORES, {
+        const res = await fetch(APPS_SCRIPT_ENDPOINT_EFICIENCIA, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: new URLSearchParams(mapped).toString(),
@@ -117,7 +117,7 @@ exports.handler = async (event) => {
         console.error('[submit-distribuidor] GAS forward error:', e);
       }
     } else {
-      console.error('[submit-distribuidor] APPS_SCRIPT_ENDPOINT_CONTENEDORES no configurado');
+      console.error('[submit-distribuidor] APPS_SCRIPT_ENDPOINT_EFICIENCIA no configurado');
     }
 
     return {
