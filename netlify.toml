@@ -1,0 +1,17 @@
+[build]
+  functions = "netlify/functions"
+  publish   = "."
+
+[functions]
+directory = "netlify/functions"
+node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/submit-contenedores"
+  to = "/.netlify/functions/submit-contenedores"
+  status = 200
+
+[[redirects]]
+  from = "/api/submit-distribuidor"
+  to = "/.netlify/functions/submit-distribuidor"
+  status = 200
