@@ -1,1 +1,8 @@
-assets/videos/videoDeyac.mp4
+/assets/videos/*
+!assets/videos/.gitkeep
+
+# opcional extra-seguro:
+*.mp4
+*.mov
+*.avi
+*.mkv
