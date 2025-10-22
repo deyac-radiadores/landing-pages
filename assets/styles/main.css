@@ -1,4 +1,28 @@
 /* CSS PERSONALIZADO */
+.video-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.bg-video {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .bg-video,
+  .video-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
 
 footer a{color:white;display: block;}
 header nav {justify-content: center;align-items: center;margin: 15px 30px;position: relative;gap: 15px;}
