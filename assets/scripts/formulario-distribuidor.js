@@ -4,7 +4,7 @@
   const FORM_ID   = 'mc-embedded-subscribe-form';
   const BTN_ID    = 'mc-embedded-subscribe';
   const STATUS_ID = 'form-status';
-  const THANK_YOU_URL = 'https://deyac.netlify.app/gracias-deyac'; // ajusta si quieres
+  const THANK_YOU_URL = 'https://deyacradiadores.com/gracias-deyac/'; // ajusta si quieres
   const MC_IFRAME_NAME = 'mc-submit-bridge';
   const BADGE_SLOT_ID  = 'recaptcha-badge-slot';
 
