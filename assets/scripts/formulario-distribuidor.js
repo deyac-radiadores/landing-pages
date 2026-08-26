@@ -1,6 +1,6 @@
 (() => {
   // ====== CONSTANTES ======
-  const SITE_KEY  = '6Lf6IYsqAAAAAJhaDoHJjVmT7EBejRMo8XHP0ja3'; // v3 (pública)
+  const SITE_KEY  = '6Lf6IYsqAAAAAJhaDoHJjVmT7EBejRMo8XHP0ja3'; // v3 (pública) 
   const FORM_ID   = 'mc-embedded-subscribe-form';
   const BTN_ID    = 'mc-embedded-subscribe';
   const STATUS_ID = 'form-status';
