@@ -20,7 +20,36 @@
   }
 }
 
+/* CSS PERSONALIZADO */
+.video-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
 
+.bg-video {
+  position: relative;
+  z-index: 1;
+  width: 900px;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .bg-video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
 #videoDos video {
     max-width: 1100px;
     display: block;
